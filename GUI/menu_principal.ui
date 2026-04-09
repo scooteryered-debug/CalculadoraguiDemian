@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App Ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ====== GLOBAL ====== */
+QMainWindow {
+    background-color: #eef7f2;
+    font-size: 18pt;
+    font-family: &quot;Segoe UI&quot;, &quot;Roboto&quot;, sans-serif;
+    color: #1f2d2a;
+}
+
+/* ====== MENU BAR ====== */
+QMenuBar {
+    background-color: #2e7d5a;
+    color: #ffffff;
+    padding: 6px;
+    spacing: 10px;
+    border: none;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+QMenuBar::item:selected {
+    background-color: #3fa37a;
+}
+
+QMenuBar::item:pressed {
+    background-color: #2a8c68;
+}
+
+/* ====== MENUS ====== */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #cde8dc;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QMenu::item {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+QMenu::item:selected {
+    background-color: #d4f5e9;
+    color: #1f2d2a;
+}
+
+QMenu::item:disabled {
+    color: #9bb8ae;
+}
+
+/* ====== ACTIONS (indirect styling via menu items) ====== */
+QMenu::separator {
+    height: 1px;
+    background: #cde8dc;
+    margin: 6px 10px;
+}
+
+/* ====== OPTIONAL: TOOLTIP ====== */
+QToolTip {
+    background-color: #2e7d5a;
+    color: #ffffff;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 16pt;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>44</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionCalculadora"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora">
+   <property name="text">
+    <string>Calculadora</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

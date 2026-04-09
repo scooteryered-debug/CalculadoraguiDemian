@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>485</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>OpenHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Calculadora Demian</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fondo general del diálogo */
+QDialog {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    font-size: 10pt;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #CCCCCC;
+    font-weight: 500;
+}
+
+QLabe#label_resultado {
+    color: #CCCCCC;
+	font-size:48pt;
+    font-weight: 500;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #1E1E1E;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    padding: 6px 8px;
+    color: #FFFFFF;
+    selection-background-color: #B71C1C;
+}
+
+QLineEdit:focus {
+    border: 1px solid #E53935;
+    background-color: #232323;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #B71C1C;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    color: white;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #E53935;
+}
+
+QPushButton:pressed {
+    background-color: #7F0000;
+}
+
+/* Botón secundario (opcional con objectName) */
+QPushButton#secondaryButton {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #CCC;
+}
+
+QPushButton#secondaryButton:hover {
+    border: 1px solid #E53935;
+    color: #FFF;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Número 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="edit_numero1"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <weight>62</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Número 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="edit_numero2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="boton_sumar">
+       <property name="font">
+        <font>
+         <family>Segoe UI Semibold</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Sumar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_resultado">
+       <property name="font">
+        <font>
+         <weight>62</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
